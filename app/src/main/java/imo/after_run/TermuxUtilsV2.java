@@ -10,8 +10,6 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-import imo.after_run.MainActivity;
-import imo.after_run.TermuxUtils;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
