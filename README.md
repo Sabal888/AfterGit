@@ -1,4 +1,3 @@
-### will have source code soon..
 # AfterGit
 command based git client for android
 
