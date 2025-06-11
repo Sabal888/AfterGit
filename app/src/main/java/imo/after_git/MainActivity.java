@@ -8,6 +8,9 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.provider.Settings;
+import android.widget.EditText;
+import android.widget.Button;
+import android.view.View;
 
 public class MainActivity extends Activity 
 {
@@ -22,8 +25,17 @@ public class MainActivity extends Activity
             return;
 		}
 		
-		//TODO: get a dir with .git inside
+		final EditText repoPathEdit = findViewById(R.id.repo_path_edittext);
+		final Button repoLoadBtn = findViewById(R.id.repo_load_btn);
 		
+		repoLoadBtn.setOnClickListener(new View.OnClickListener(){
+			@Override
+			public void onClick(View v){
+				String repoPath = repoPathEdit.getText().toString().trim();
+				
+				//TODO: get the status of git repo using termux
+			}
+		});
     }
 	
 	
