@@ -11,6 +11,7 @@ import android.provider.Settings;
 import android.widget.EditText;
 import android.widget.Button;
 import android.view.View;
+import imo.after_run.TermuxUtils;
 
 public class MainActivity extends Activity 
 {
