@@ -52,6 +52,7 @@ public class MainActivity extends Activity
 				instruction.setVisibility(View.VISIBLE);
 				String repoPath = repoPathEdit.getText().toString().trim();
 				String command = "cd " + repoPath;
+				command += "\ngit config --global --add safe.directory " + repoPath;
 				command += "\ngit status";
 				
 				TermuxUtilsV2.commandRun(command, MainActivity.this);
